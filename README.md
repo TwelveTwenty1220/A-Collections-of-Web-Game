@@ -33,3 +33,5 @@ npm run build
 ```sh
 npm run lint
 ```
+
+### Something I get from codeOpen
