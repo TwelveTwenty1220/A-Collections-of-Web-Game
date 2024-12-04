@@ -1,0 +1,45 @@
+@import './base.css';
+
+#app {
+  width: 100%;          /* 确保宽度占满整个屏幕 */
+  max-width: 100%;      /* 防止宽度超出 */
+  height: 100vh;        /* 高度占满整个视口 */
+  margin: 0 auto;       /* 居中 */
+  /* padding: 2rem; */
+  font-weight: normal;
+  display: flex;        /* 使用 Flexbox 来居中 */
+  justify-content: center; /* 水平居中 */
+  align-items: center;  /* 垂直居中 */
+}
+
+a,
+.green {
+  text-decoration: none;
+  color: hsla(160, 100%, 37%, 1);
+  transition: 0.4s;
+  padding: 3px;
+}
+
+@media (hover: hover) {
+  a:hover {
+    background-color: hsla(160, 100%, 37%, 0.2);
+  }
+}
+
+@media (min-width: 1024px) {
+  body {
+    display: flex;
+    place-items: center;
+    height: 100vh;  /* 确保页面高度占满屏幕 */
+    margin: 0;
+  }
+
+  #app {
+    width: 100%;    /* 100% 宽度 */
+    height: auto;   /* 自适应高度 */
+    display: flex;  /* 使用 Flexbox 来居中 */
+    justify-content: center;  /* 水平居中 */
+    align-items: center;      /* 垂直居中 */
+    
+  }
+}
